@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+
 /* ---------------
     common styles
 ----------------- */
@@ -15,7 +18,8 @@
     --common-border: 2px solid black;
 }
 
-body {
+header,
+main {
     font-family: 'Poppins', sans-serif;
     max-width: 1050px;
     margin: 0 auto;
@@ -182,6 +186,8 @@ e-commerce section styles
 /* ---------------
 popular collection styles
 ----------------- */
+
+
 .popular-collection {}
 
 .popular-collection>h1 {
@@ -274,4 +280,95 @@ popular collection styles
 .see-more-button a {
     text-decoration: none;
     color: #E02C6D;
+}
+
+
+/* ---------------
+Featured products styles
+----------------- */
+
+.featured-products {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    gap: 96px;
+}
+
+.featured-thumbnail {
+    width: 404px;
+    height: 270px;
+}
+
+.featured-details {
+    width: 610px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.featured-details h1 {
+    font-size: 34px;
+    line-height: 60px;
+    color: #0A0826;
+
+}
+
+.featured-details p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+
+/* ---------------
+footer styles
+----------------- */
+
+footer {
+    height: 239px;
+    background: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.influencer-products {
+    width: 262px;
+    height: 139px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.influencer-products p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    font-feature-settings: 'liga' off;
+    /* Text / Gray 300 */
+    color: #D9DBE1;
+}
+
+.social {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.social a {
+    color: white;
+    width: 32px;
+    background-color: #22213C;
+    text-align: center;
+    padding: 2px;
+    border-radius: 50%;
 }
